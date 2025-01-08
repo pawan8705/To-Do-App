@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 85.1vh;
+  height: auto;
+  background: linear-gradient(0deg, green 0%, green 25%, white 25%, white 75%, orange 75%, orange 100%);
+}
+
+#main-header {
+  border-radius: 5px;
+  background-color: navy;
+}
+
+#header-title {
+  display: contents;
+}
+
+#header-title,
+#logo {
+  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #030202;
+}
+
+#logo {
+  float: right;
+}
+
+.container {
+  width: 50%;
+  margin-top: 7em;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-bottom: 4px solid rgb(249, 230, 146);
+}
+
+.content {
+  display: 1 1 0%;
+  width: 90%;
+}
+
+.item .content .text {
+  font-size: 1.125rem;
+  width: 100%;
+  border-color: transparent;
+}
+
+.item .content .text:hover {
+  cursor: context-menu;
+}
+
+.item .actions {
+  display: flex;
+}
+
+.item .actions button {
+  margin-left: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 2px 6px;
+}
+
+.todos {
+  overflow: scroll;
+}
+
+.text {
+  border: none;
+  outline: none;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width:800px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .container {
+    width: 99%;
+  }
+}
+
+@media screen and (max-width:375px) {
+
+  #header-title,
+  #logo {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+}
